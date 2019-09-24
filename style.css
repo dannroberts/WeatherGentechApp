@@ -1,15 +1,60 @@
 body{
     background: lightgrey;
     letter-spacing: 0.2em;
-    font-size: 0.8em;
+    font-size: 1.4em;
+    color: #d7c447;
+   
+
+    
 }
-.container{
-    max-width: 400px;
+.back-ground{
+    background-image: url("img/icons/earth.jpg");
+    background-size: cover;
+    height: 1000px;
+    display: block;
+    
 }
+
+.name-title{
+    font-size: 3.0em;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+.change-location{
+    padding: 70px 0;
+    font-size: 1.2em;
+    padding-top: 380px;
+    color: red;
+}
+.form-control{
+    width: 400px;
+  margin-left: 360px;
+
+}
+.input-position{
+    padding-top: 30px;
+   
+}
+
+
 .icon{
     position: relative;
     top: -50px;
     border-radius: 50px;
     width: 100px;
     margin-bottom: -50px;
+}
+.form-control{
+    border: 2px solid #d7c447;
+}
+.card{
+    width: 550px;
+    height: 700px;
+   
+}
+.card-position{
+ display: flex;
+ justify-content: center;
+ padding-top: 70px;
 }

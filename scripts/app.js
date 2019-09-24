@@ -3,22 +3,26 @@ const card = document.querySelector('.card');
 const details = document.querySelector('.details');
 const time = document.querySelector("img.time");
 const icon = document.querySelector(".icon img");
+const backGround = document.querySelector(".back-pic");
+const coou = document.querySelector(".coo");
 
 
 const updateUI = (data) => {
 
     const cityDets = data.cityDets;
     const weather = data.weather;
-
+    // setTimeout(()=>{
     details.innerHTML = `
     <h5 class="my-3">${cityDets.EnglishName}</h5>
     <div class="my-3">${weather.WeatherText}</div>
+    
+    
     <div class="display-4 my-4">
         <span>${weather.Temperature.Metric.Value}</span>
         <span>&deg;C</span>
     </div>
     `;
-
+// }, 1000);
     const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
         icon.setAttribute("src",iconSrc);
 
@@ -34,7 +38,9 @@ const updateUI = (data) => {
     if(card.classList.contains('d-none')){
         card.classList.remove('d-none');
     }
-    
+
+   coou.style.display ="none";
+    console.log(data);
     
 };
 
