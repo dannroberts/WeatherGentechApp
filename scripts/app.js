@@ -5,6 +5,7 @@ const time = document.querySelector("img.time");
 const icon = document.querySelector(".icon img");
 const backGround = document.querySelector(".back-pic");
 const coou = document.querySelector(".coo");
+const flagsPosition = document.querySelector(".flags");
 
 
 const updateUI = (data) => {
@@ -39,8 +40,8 @@ const updateUI = (data) => {
         card.classList.remove('d-none');
     }
 
-   coou.style.display ="none";
-    console.log(data);
+   coou.style.display ="none";   
+    
     
 };
 
@@ -65,6 +66,7 @@ cityForm.addEventListener("submit", e =>{
 
     updateCity(city).then(data =>{
         updateUI(data)
+        
     }).catch(err => {
         console.log(err);
     })

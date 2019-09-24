@@ -16,13 +16,10 @@ const getCity = async (city) => {
 
     const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${key}&q=${city}`;
-<<<<<<< HEAD
-=======
 
     // get country from the data retreived
     
     
->>>>>>> 3ea11c5c385ffcc0c768faeb1cc1056a88ad92ac
     const response = await fetch(base + query);
     const data =  await response.json();
         
@@ -44,9 +41,12 @@ function getPicture(countryName){
             
             let result = data[0];
             console.log(result);
-            document.body.style.backgroundImage = `url(${result.flag})`;
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "cover";
+            
+            flagsPosition.setAttribute("src",result.flag);
+           
+            // document.body.style.backgroundImage = 
+            // document.body.style.backgroundRepeat = "no-repeat";
+            // document.body.style.backgroundSize = "cover";
             
         })
     .catch(err => console.log(err))};
