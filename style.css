@@ -10,13 +10,22 @@ body{
     
 }
 .back-ground{
-    background-image: url("img/icons/blue_earth.jpeg");
-    background-size: cover;
+    /* background-image: url("img/icons/white_earth.png");
+    background-size: cover; */
     height: 1000px;
+
     display: block;
     
 }
-
+.earth-pic{
+    height: 50px; 
+   text-align: center
+} 
+.earth-pic img{ 
+    height: 500px;
+    width: 1000px;
+    
+} 
 .name-title{
     font-size: 3.0em;
     text-align: center;
