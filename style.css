@@ -2,13 +2,15 @@ body{
     background: lightgrey;
     letter-spacing: 0.2em;
     font-size: 1.4em;
-    color: #d7c447;
+    /* font-family:'Audiowide', cursive; */
+    font-family: 'Press Start 2P', cursive;
+    color:white;
    
 
     
 }
 .back-ground{
-    background-image: url("img/icons/earth.jpg");
+    background-image: url("img/icons/blue_earth.jpeg");
     background-size: cover;
     height: 1000px;
     display: block;
