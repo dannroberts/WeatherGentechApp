@@ -46,16 +46,19 @@ const updateUI = (data) => {
     cardPosi.classList.remove('d-none');
 }   
         const test = document.querySelector(".card-position");
+        
     if((weather.IsDayTime === false) && (weather.WeatherText === "Clear" )|| (weather.WeatherText === "Mostly Clear")  ){
         test.style.backgroundImage = "url('/img/icons/full-moon-4327672_1920.jpg')";
         document.querySelector("#weather-name").style.color ="gold";
         document.querySelector("#c").style.color ="silver";
         weather.WeatherText.style.color = "yellow";}
+
         else if((weather.IsDayTime === false)  ){
             document.querySelector("#weather-name").style.color ="silver";
             test.style.backgroundImage = "url('/img/icons/night4.jpeg')";
             document.querySelector("#c").style.color ="yellow";}
-        else if((weather.IsDayTime === true) && (weather.WeatherText === "Mostly cloudy" )|| (weather.WeatherText === "Cloudy") || (weather.WeatherText === "Dreary")|| (weather.WeatherText === "Dreary")|| (weather.WeatherText === "Clouds and sun") ){
+        
+            else if((weather.IsDayTime === true) && (weather.WeatherText === "Mostly cloudy" )|| (weather.WeatherText === "Cloudy") || (weather.WeatherText === "Dreary")|| (weather.WeatherText === "Dreary")|| (weather.WeatherText === "Clouds and sun") ){
             test.style.backgroundImage = "url('/img/icons/nature-3294543_1920.jpg')";
             document.querySelector("#weather-name").style.color ="black";
         }
@@ -65,6 +68,7 @@ const updateUI = (data) => {
                 document.querySelector("#weather-name").style.color ="orange";
                 test.style.backgroundImage = "url('/img/icons/sunny.jpg')";}
 
+
                 else if((weather.IsDayTime === true) && (weather.WeatherText === "Showers" )|| (weather.WeatherText === "Rain") || (weather.WeatherText === "Ice")|| (weather.WeatherText === "Partly Sunny w/ Showers") || (weather.WeatherText === "Partly Sunny w/ Showers") || (weather.WeatherText === "Light rain") || (weather.WeatherText === "Freezing Rain")|| (weather.WeatherText === "Mist")){
                     document.querySelector("#weather-name").style.color ="blue";
                     test.style.backgroundImage = "url('/img/icons/rain-315446.jpg')";} 
@@ -72,8 +76,12 @@ const updateUI = (data) => {
                     else if((weather.IsDayTime === true) && (weather.WeatherText === "T-storms" )
                      ){
                         test.style.backgroundImage = "url('/img/icons/flash-2568381_1920.jpg')";}
+                        
                         else if((weather.IsDayTime === true)){
-                            test.style.backgroundImage = "url('/img/icons/cloudy')";} }
+                            test.style.backgroundImage = "url('/img/icons/cloudy')";} 
+                        };
+
+                        
 
     // }else if((weather.IsDayTime === true) && () ){
     //     test.style.backgroundImage = "url('/img/icons/blue_sky.jpeg')";
